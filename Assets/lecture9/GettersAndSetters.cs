@@ -11,11 +11,11 @@ public class GettersAndSetters : MonoBehaviour
 
     private string Pass{
         get {
-          return password;
+            return password;
         }
         set {                           // public void Password (string value){
-                  password = value;           // password = value; }
-              PasswordChange();
+            password = value;           // password = value; }
+            PasswordChange();
         }
     }
         void Start()
