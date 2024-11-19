@@ -7,8 +7,9 @@ namespace Assignment18.part2
     {
         void Start()
         {
+
             Inventory potions = new Inventory();
-            potions.AddItem("Healing Potion");
+            potions.AddItem("Healing  Potion");
             potions.AddItem("Strength Potion");
 
             Inventory elixirs = new Inventory();
