@@ -6,6 +6,7 @@ namespace Lecture16
     public class MoveObject : MonoBehaviour
     {
         float speed = 5f;
+        
         void Start()
         {
             Camera.main.backgroundColor = Color.red;

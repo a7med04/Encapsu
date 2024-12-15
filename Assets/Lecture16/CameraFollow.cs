@@ -5,16 +5,22 @@ namespace Lecture16
 {
     public class CameraFollow : MonoBehaviour
     {
-        public GameObject targetObject;
+        public Transform target;
+        private Vector3 difference;
+        public bool lookAt = true;
         void Start()
         {
-
+            difference = transform.position - target.position;
         }
 
-        void Update()
+        void LateUpdate()
         {
-            transform.position = targetObject.transform.position;
-            transform.position -= new Vector3( 10f, 0, 0);
+            
+            Vector3 newPosition = Vector3.Lerp(transform.position, target.position + difference, 0.02f);
+            transform.position = newPosition ;
+            if (lookAt){
+                transform.LookAt(target);
+            }
         }
     }
 }
