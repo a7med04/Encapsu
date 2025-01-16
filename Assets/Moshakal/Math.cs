@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,4 +19,8 @@ public class Math
         return name;
     }
 
+    internal static int Pow(int v1, int v2)
+    {
+        throw new NotImplementedException();
+    }
 }

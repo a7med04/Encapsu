@@ -24,9 +24,9 @@ public class GettersAndSetters : MonoBehaviour
           Debug.Log(Pass);
 
         Health = 100;
- Debug.Log(Health);
+        Debug.Log(Health);
 
-         Debug.Log(password);
+        Debug.Log(password);
         {
             
         }
@@ -53,10 +53,4 @@ public class GettersAndSetters : MonoBehaviour
             }
         }
     }
-
-
-
-
 }
-
-
