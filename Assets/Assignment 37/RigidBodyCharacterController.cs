@@ -13,7 +13,7 @@ namespace Assignment37
         void Start()
         {
             rigid = GetComponent<Rigidbody>();
-            rigid.mass = 5;
+            rigid.mass = 1;
             rigid.freezeRotation = true;
         }
 
@@ -40,7 +40,7 @@ namespace Assignment37
             }
             else
             {
-                rigid.drag = 0f;
+                rigid.drag = 0;
                 rigid.velocity = @in;
             }
         }
